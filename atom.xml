@@ -4,7 +4,7 @@
   <title><![CDATA[Penguin Digital]]></title>
   <link href="http://epenguindotcom.github.com/atom.xml" rel="self"/>
   <link href="http://epenguindotcom.github.com/"/>
-  <updated>2012-12-29T00:20:59+08:00</updated>
+  <updated>2012-12-30T17:06:49+08:00</updated>
   <id>http://epenguindotcom.github.com/</id>
   <author>
     <name><![CDATA[Kenneth Zhao]]></name>
@@ -18,23 +18,23 @@
     <link href="http://epenguindotcom.github.com/blog/2012/12/28/boostrapping-an-octopress-blog/"/>
     <updated>2012-12-28T23:24:00+08:00</updated>
     <id>http://epenguindotcom.github.com/blog/2012/12/28/boostrapping-an-octopress-blog</id>
-    <content type="html"><![CDATA[<p>After much foot-dragging, I finally sit down and created this blog using Octopress and GitHub Pages.  The whole process is
+    <content type="html"><![CDATA[<p>After much foot-dragging, I finally sat down and created this blog using Octopress and GitHub Pages.  The whole process is
 rather smooth thanks to well written official <a href="http://octopress.org/docs/">document</a> as well as other how-to&#8217;s on the internet.</p>
 
-<p>For starter, the generated static pages will be deployed to a free account on GitHub.  There are other options, such as
-the famed Heroku service, however.  For now, I took an easy route.  I may try to have the static pages deployed on my
-VPS through the rsync method in the future.</p>
+<p>For starter, the generated static pages will be deployed to my free account on GitHub.  There are other options, such as
+the famed Heroku service, however.  For now, I just took an easy route.  I may try to have the static pages deployed on my
+own VPS through the rsync method in the future.</p>
 
 <p>To start a basic Octopress based blog, one needs to:</p>
 
-<ol>
-<li>Installing proper ruby and gem environment;</li>
-<li>Cloning the Octopress repo;</li>
-<li>Configuring the blog meta info;</li>
-<li>Creating blog posts; and</li>
-<li>Deploying the blog data.</li>
-</ol>
+<pre><code>1. Installing proper ruby and gem environment;
+2. Cloning the Octopress repo;
+3. Configuring the blog meta info;
+4. Creating blog posts; and
+5. Deploying the blog data.
+</code></pre>
 
+<p>This post serves the validation test that all the above procedures are <strong>properly</strong> executed.</p>
 ]]></content>
   </entry>
   
