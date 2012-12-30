@@ -9,8 +9,7 @@
   <meta name="author" content="Kenneth Zhao">
 
   
-  <meta name="description" content="After much foot-dragging, I finally sat down and created this blog using Octopress and GitHub Pages. The whole process is
-rather smooth thanks to &hellip;">
+  <meta name="description" content="When a network is under DDOS attack, one convenient and somewhat effective tool is the so-called &#8220;blackhole routing&#8221; or &#8220;null route &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +64,66 @@ rather smooth thanks to &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/30/null-route/">Null Route</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-30T22:52:00+08:00" pubdate data-updated="true">Dec 30<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When a network is under DDOS attack, one convenient and somewhat effective tool is the so-called &#8220;blackhole routing&#8221; or &#8220;null route&#8221;.</p>
+
+<p>A <em>null route</em> (<em>blackhole route</em>) is a network route that goes nowhere.  Matching packets are simply dropped.  In a sense, it&#8217;s a very limited firewall.</p>
+
+<p>Null routing has an advantage over classical firewalls in two aspects:</p>
+
+<pre><code>1. it's available on every potential network router and almost all morden OS's; and
+2. it adds virtually no performance hit as it won't go through the firewall rule chain before it will be processed.
+</code></pre>
+
+<p>Hence, null routes are often used to mitigate denial-of-service (DDOS) attacks before the hostile packets reaching the <em>bottleneck</em>.</p>
+
+<p>In Linux environment, one can easily add a null route using command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ip route add blackhole xxx.xxx.xxx.xxx/xx</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To remove the null route:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>route delete xxx.xxx.xxx.xxx/xx</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -129,6 +188,10 @@ own VPS through the rsync method in the future.</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/12/30/null-route/">null route</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/12/28/boostrapping-an-octopress-blog/">Boostrapping an Octopress Blog</a>
